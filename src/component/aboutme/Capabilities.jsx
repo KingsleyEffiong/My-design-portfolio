@@ -91,7 +91,7 @@ const itemVariants = {
     whileInView="visible"
     viewport={{ once: true, amount: 0 }} // Animation triggers when 30% of the section is in view
     variants={containerVariants}>
-            <motion.p className="text-xs text-[var(--light-gray)]" variants={itemVariants}>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </motion.p>
+            <motion.p className="text-xs text-[var(--light-gray)]" variants={itemVariants}>I am always looking to add more skills as I advance in the tech industry. Here is my stack</motion.p>
             <motion.ul className="flex flex-row w-full gap-3 flex-wrap"
               initial="hidden"
               whileInView="visible"
