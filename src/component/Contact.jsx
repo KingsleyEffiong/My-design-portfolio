@@ -1,6 +1,8 @@
 import Form from "../UI/Form"
 import { useProvider } from "./PostProvider";
 import { motion } from "framer-motion";
+import image from "../assets/images/Kingsley-Effiong-FlowCV-Resume-20241219 (10).pdf"
+
 function Contact() {
   const {responsive, section3} = useProvider();
   const containerVariants = {
@@ -15,6 +17,7 @@ function Contact() {
     },
 };
 
+console.log(image)
 const itemVariants = {
     hidden: { opacity: 0, y: 50, x: 100 },
     visible: {
@@ -40,7 +43,7 @@ const itemVariants = {
            <h1 className="font-bebas text-[4rem] leading-[3.5rem] my-9">Lets connect</h1>
            <div className="my-3">
             <p>Say hello at @kingsleyeffiong642@gmail.com</p>
-            <p>For more information; Here is my resume </p>
+            <p>For more information, here is my <a href={image} download="Kingsley-Effiong-Resume.pdf" className="underline">Resume</a>.</p>
            </div>
             <div className="w-[200px] justify-around items-center flex mt-9">
               <a href="https://www.linkedin.com/in/kingsley-effiong-a84641253/" target="_blank">

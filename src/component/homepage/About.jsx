@@ -42,7 +42,8 @@ const itemVariants = {
         >
             <h1 className="font-bebas text-[4rem] leading-[3.5rem]">{!responsive && 'About Me'}</h1>
             <motion.div className="" variants={itemVariants}>
-                <h2 className="text-[var(--light-gray)]">I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h2>
+                <h2 className="text-[var(--light-gray)]">I am an Innovative frontend web developer with expertise in Javascript, React, Next Js, Vite, Firebase, and
+                Tailwind CSS. Skilled in building interactive web applications. </h2>
             <span className="text-[var(--light-gray)]">Here are some of the selected projects that showcase my passion for front-end development.</span>
             <Link to="/about-me" className="py-10">
                 <AboutMeLink />

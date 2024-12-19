@@ -34,7 +34,8 @@ const scrollToSection = (section) => {
             typingDelay={500} // Delay before typing starts
             eraseDelay={1000} // Delay before erasing
         />
-            <p className="text-[var(--light-gray)]">A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
+            <p className="text-[var(--light-gray)]">I am an Innovative frontend web developer with expertise in Javascript, React, Next Js, Vite, Firebase, and
+            Tailwind CSS. Skilled in building interactive web applications.</p>
             </div>
             <motion.div className="flex justify-around items-center w-[327px]"
               variants={containerVariants}
