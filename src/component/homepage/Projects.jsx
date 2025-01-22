@@ -13,8 +13,8 @@ function Projects() {
             opacity: 1,
             transition: {
                 staggerChildren: 1, // Animates child items with a delay between each
-                    duration: 0.6, // Duration of the animation (in seconds)
-                    ease: "easeOut", // Type of easing for the animation
+                duration: 0.6, // Duration of the animation (in seconds)
+                ease: "easeOut", // Type of easing for the animation
             },
         },
     };
@@ -31,7 +31,7 @@ function Projects() {
             },
         },
     };
-    
+
 
     return (
         <motion.section
@@ -44,9 +44,8 @@ function Projects() {
         >
             <div>
                 <h1
-                    className={`font-bebas ${
-                        responsive ? "text-[3rem]" : "text-[4rem]"
-                    } leading-[3.5rem]`}
+                    className={`font-bebas ${responsive ? "text-[3rem]" : "text-[4rem]"
+                        } leading-[3.5rem]`}
                 >
                     Featured Projects
                 </h1>
@@ -59,20 +58,18 @@ function Projects() {
                 className="w-full h-auto flex flex-col gap-5 my-4"
                 variants={containerVariants}
             >
-                {PROJECTS.map((project) => (
+                {PROJECTS.sort((a, b) => b.year - a.year).map((project) => (
                     <motion.div
-                        className={`flex gap-14 ${
-                            responsive ? "flex-col" : "flex-row"
-                        } items-center justify-between`}
+                        className={`flex gap-14 ${responsive ? "flex-col" : "flex-row"
+                            } items-center justify-between`}
                         key={project.id}
                         variants={itemVariants} // Each item has its own animation
                     >
                         <div
-                            className={`${
-                                responsive
-                                    ? "w-full h-[300px]"
-                                    : "w-[600px] h-[600px]"
-                            } bg-[var(--dark-gray)] flex justify-center items-center rounded-2xl`}
+                            className={`${responsive
+                                ? "w-full h-[300px]"
+                                : "w-[600px] h-[600px]"
+                                } bg-[var(--dark-gray)] flex justify-center items-center rounded-2xl`}
                         >
                             <img
                                 src={project.image}
@@ -81,9 +78,8 @@ function Projects() {
                             />
                         </div>
                         <div
-                            className={`${
-                                responsive ? "w-full" : "w-[600px]"
-                            }`}
+                            className={`${responsive ? "w-full" : "w-[600px]"
+                                }`}
                         >
                             <h1 className="text-2xl">{project.about}</h1>
                             <p className="text-sm text-[var(--light-gray)]">
