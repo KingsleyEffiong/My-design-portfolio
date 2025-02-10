@@ -74,7 +74,7 @@ function Projects() {
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className="w-[350px] h-[200px]"
+                                className="w-[350px] h-[290px]"
                             />
                         </div>
                         <div

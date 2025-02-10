@@ -3,6 +3,8 @@ import image2 from "./assets/images/mounttech telegram miniapp.png";
 import image3 from "./assets/images/expense app.png";
 import image4 from "./assets/images/web 3 app.png";
 import image5 from "./assets/images/picture.png";
+import image6 from "./assets/images/code 2.png";
+import image7 from "./assets/images/time.png";
 
 export const PROJECTS = [
   {
@@ -69,5 +71,31 @@ export const PROJECTS = [
     role: "Front-end Developer",
     link: "https://todolist-lovat-six.vercel.app/",
     git_hub_link: "https://github.com/KingsleyEffiong/Todolist",
+  },
+  {
+    id: 6,
+    type: "Challenge",
+    image: image6,
+    about: "CHROME URL BOOKMARKER EXTENSION",
+    name: "",
+    info: "The URL Bookmark Manager is a simple and efficient Chrome extension that allows users to save, view, and manage their favorite web links directly from their browser. With a clean and minimalistic UI powered by Tailwind CSS, users can quickly bookmark the current tab, view saved links, copy URLs to the clipboard, and delete unwanted bookmarks. The extension utilizes Chrome's Storage API to ensure bookmarks are synced across devices, providing a seamless and convenient browsing experience.",
+    year: 2025,
+    stack: "Javascript, React, Tailwind Css, Manifest json",
+    role: "Front-end Developer",
+    // link: "https://todolist-lovat-six.vercel.app/",
+    git_hub_link: "https://github.com/KingsleyEffiong/CHROME-BOOKMARK-EXTENSION",
+  },
+  {
+    id: 7,
+    type: "Challenge",
+    image: image7,
+    about: "INSTAGRAM EXACT TIME VIEWER",
+    name: "",
+    info: "The Instagram Exact Time Viewer is a Chrome extension that lets users see the precise timestamp of Instagram posts instead of the default time hours ago format. By extracting and displaying the exact date and time of a post, this tool provides more accuracy for users who need precise posting details. With a lightweight and seamless integration, it enhances the Instagram browsing experience without affecting the platform’s UI.",
+    year: 2025,
+    stack: "Javascript, React, Vanilla CSS, Manifest json",
+    role: "Front-end Developer",
+    // link: "https://todolist-lovat-six.vercel.app/",
+    git_hub_link: "https://github.com/KingsleyEffiong/instagram-time-viewer-",
   },
 ];
