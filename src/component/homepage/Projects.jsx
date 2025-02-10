@@ -81,7 +81,7 @@ function Projects() {
                             className={`${responsive ? "w-full" : "w-[600px]"
                                 }`}
                         >
-                            <h1 className="text-2xl">{project.about}</h1>
+                            <h1 className="text-2xl uppercase">{project.about}</h1>
                             <p className="text-sm text-[var(--light-gray)]">
                                 {project.info}
                             </p>
