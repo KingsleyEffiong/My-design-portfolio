@@ -101,7 +101,7 @@ function Projects() {
                                 <span>{project.stack}</span>
                             </div>
                             <div className="w-[284px] flex justify-around items-center mt-10">
-                                <a href={project.link}>
+                                <a href={project.link} target="_blank">
                                     <Links />
                                 </a>
                                 <a href={project.git_hub_link}>
