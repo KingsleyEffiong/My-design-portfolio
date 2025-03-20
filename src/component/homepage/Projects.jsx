@@ -51,7 +51,7 @@ function Projects() {
                 </h1>
                 <span>
                     Here are some of the selected projects that showcase my
-                    passion for front-end development.
+                    passion for web development.
                 </span>
             </div>
             <motion.div
@@ -67,14 +67,14 @@ function Projects() {
                     >
                         <div
                             className={`${responsive
-                                ? "w-full h-[300px]"
-                                : "w-[600px] h-[600px]"
+                                ? "w-full h-auto"
+                                : "w-[600px] h-auto"
                                 } bg-[var(--dark-gray)] flex justify-center items-center rounded-2xl`}
                         >
                             <img
                                 src={project.image}
                                 alt={project.name}
-                                className="w-[350px] h-[290px]"
+                                className="w-full rounded-lg"
                             />
                         </div>
                         <div

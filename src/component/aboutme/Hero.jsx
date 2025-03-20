@@ -44,11 +44,27 @@ function Hero() {
       >
         <h1 className="font-bebas text-[4rem] leading-[3.5rem]">ABOUT ME</h1>
         <div className="flex flex-col gap-5 w-[350px]">
-          <h2>I am a front-end developer based in Nigeria. </h2>
-          <p className="text-xs text-[var(--light-gray)] leading-5">I am an Innovative frontend web developer with expertise in Javascript, React, Vite, Firebase,
-            Tailwind CSS and HTML 5. Skilled in building interactive web applications, integrating real-time database features in any
-            application. Experienced in creating seamless user experiences with dynamic animations and efficient
-            database management. Dedicated to delivering scalable and user-friendly solutions.</p>
+          <h2>I am a full-stack developer based in Nigeria. </h2>
+          <p className="text-[var(--light-gray)]">
+            I am an <span className="text-[#D3E97A] font-semibold">Innovative Full-Stack Developer</span>,
+            passionate about building seamless web applications with powerful frontend and backend technologies.
+            <br />
+            <br />
+            💻 Frontend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              JavaScript, React, Next.js, Vite, Tailwind CSS, HTML5.
+            </span>
+            <br />
+            🚀 Backend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              Node.js, Express.js, MongoDB, Firebase, Google Auth, API Development.
+            </span>
+            <br />
+            🛠 Additional Expertise:
+            <span className="text-[#D3E97A] font-medium">
+              Web Scraping, Authentication, REST APIs, Firestore, Cloud Functions.
+            </span>
+          </p>
           <div className="flex justify-around items-center w-[350px]">
             <Button
               onClick={() => { }}

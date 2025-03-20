@@ -1,20 +1,17 @@
-import profileImage from "../../assets/images/profile image.jpg"
-import Button from "../../UI/Button"
-import { useProvider } from "../PostProvider"
-import ReactTypingEffect from 'react-typing-effect';
+import profileImage from "../../assets/images/profile image.jpg";
+import Button from "../../UI/Button";
+import { useProvider } from "../PostProvider";
+import ReactTypingEffect from "react-typing-effect";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 function Hero() {
   const { responsive, section3 } = useProvider();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 2, // Animates child items with a delay between each
-        duration: 0.6, // Duration of the animation (in seconds)
-        ease: "easeOut", // Type of easing for the animation
-      },
+      transition: { staggerChildren: 2, duration: 0.6, ease: "easeOut" },
     },
   };
 
@@ -23,29 +20,58 @@ function Hero() {
   };
 
   return (
-    <section className={`w-full h-1/3 flex ${responsive === true ? 'flex-col items-start gap-10' : 'flex-row items-center'} justify-around  py-6 px-3 border-b border-b-gray-200`}>
-      <div className="flex flex-col gap-6 py-20">
-        <div className="w-[400px] px-3 text-wrap">
+    <section
+      className={`w-full h-1/3 flex ${responsive ? "flex-col items-center gap-10" : "flex-row items-center"
+        } justify-around py-6 px-3 border-b border-b-gray-200`}
+    >
+      {/* Left Side - Text */}
+      <div className="flex flex-col gap-6 py-10">
+        <div className="md:w-[600px] px-3 text-wrap">
           <ReactTypingEffect
-            text={["hi, i am kingsley Effiong", "Welcome to my portfolio!"]}
-            className={`font-bebas ${responsive ? 'text-[2rem]' : 'text-[2.3rem]'} leading-[3.5rem]`}
-            speed={100} // Typing speed
-            eraseSpeed={50} // Erase speed
-            typingDelay={500} // Delay before typing starts
-            eraseDelay={1000} // Delay before erasing
+            text={["Hi, I'm Kingsley Effiong", "Welcome to my portfolio!"]}
+            className={`font-bebas ${responsive ? "text-[2rem]" : "text-[2.3rem]"
+              } leading-[3.5rem]`}
+            speed={100}
+            eraseSpeed={50}
+            typingDelay={500}
+            eraseDelay={1000}
           />
-          <p className="text-[var(--light-gray)]">I am an Innovative frontend web developer with expertise in Javascript, React, Vite, Firebase,
-            Tailwind CSS and HTML 5. <br /> Skilled in building interactive web applications.</p>
+          <p className="text-[var(--light-gray)]">
+            I am an <span className="text-[#D3E97A] font-semibold">Innovative Full-Stack Developer</span>,
+            passionate about building seamless web applications with powerful frontend and backend technologies.
+            <br />
+            <br />
+            💻 Frontend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              JavaScript, React, Next.js, Vite, Tailwind CSS, HTML5.
+            </span>
+            <br />
+            🚀 Backend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              Node.js, Express.js, MongoDB, Firebase, Google Auth, API Development.
+            </span>
+            <br />
+            🛠 Additional Expertise:
+            <span className="text-[#D3E97A] font-medium">
+              Web Scraping, Authentication, REST APIs, Firestore, Cloud Functions.
+            </span>
+          </p>
         </div>
-        <motion.div className="flex justify-around items-center w-[327px]"
+
+        {/* Buttons */}
+        <motion.div
+          className="flex justify-around items-center w-[327px]"
           variants={containerVariants}
         >
-          <Button
-            onClick={() => scrollToSection(section3)}
-
-          >
+          <Button onClick={() => scrollToSection(section3)}>
             <span>CONTACT ME</span>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="21" cy="21" r="5" fill="#0A0A0A" />
             </svg>
           </Button>
@@ -72,17 +98,22 @@ function Hero() {
           </Link>
         </motion.div>
       </div>
-      <div className="w-[500px] h-[500px] overflow-hidden flex justify-center item-center rounded-3xl my-20">
+
+      {/* Right Side - Profile Image */}
+      <motion.div
+        className="w-[500px] h-[500px] overflow-hidden flex justify-center item-center rounded-3xl my-20"
+        whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+      >
         <motion.img src={profileImage} whileHover={{
           scale: 1.3,
           transition: {
             duration: 0.6, // Duration of the animation (in seconds)
             ease: "easeOut", // Type of easing for the animation
           },
-        }} alt="profile image" className={`${responsive === true ? 'w-full h-[auto]' : ''}   cursor-pointer`} />
-      </div>
+        }} alt="profile image" className="cursor-pointer" />
+      </motion.div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

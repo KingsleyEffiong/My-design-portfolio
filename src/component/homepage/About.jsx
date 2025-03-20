@@ -37,14 +37,31 @@ function About() {
       viewport={{ once: true, amount: 0.3 }} // Animation triggers when 30% of the section is in view
       variants={containerVariants} // Container animation
     >
-      <motion.div className={`flex ${responsive ? 'flex-col' : 'justify-around items-center'} my-5`}
+      <motion.div className={`flex ${responsive ? 'flex-col' : 'justify-between items-center'} my-5`}
         variants={itemVariants} // Each item has its own animation
       >
         <h1 className="font-bebas text-[4rem] leading-[3.5rem]">{!responsive && 'About Me'}</h1>
         <motion.div className="" variants={itemVariants}>
-          <h2 className="text-[var(--light-gray)]">I am an Innovative frontend web developer with expertise in Javascript, React, Vite, Firebase,
-            Tailwind CSS and HTML 5. <br /> Skilled in building interactive web applications. </h2>
-          <span className="text-[var(--light-gray)]">Here are some of the selected projects that showcase my passion for front-end development.</span>
+          <p className="text-[var(--light-gray)]">
+            I am an <span className="text-[#D3E97A] font-semibold">Innovative Full-Stack Developer</span>,
+            passionate about building seamless web applications with powerful frontend and backend technologies.
+            <br />
+            <br />
+            💻 Frontend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              JavaScript, React, Next.js, Vite, Tailwind CSS, HTML5.
+            </span>
+            <br />
+            🚀 Backend Tech Stack:
+            <span className="text-[#D3E97A] font-medium">
+              Node.js, Express.js, MongoDB, Firebase, Google Auth, API Development.
+            </span>
+            <br />
+            🛠 Additional Expertise:
+            <span className="text-[#D3E97A] font-medium">
+              Web Scraping, Authentication, REST APIs, Firestore, Cloud Functions.
+            </span>
+          </p>
           <Link to="/about-me" className="py-10">
             <AboutMeLink />
           </Link>
